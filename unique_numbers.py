@@ -1,9 +1,16 @@
+"""
+Get an arbitrary array of numbers, extract and unique numbers out of it
+"""
+
 import random
 import timeit
 
 
 def unique_sorted(arr):
-    """get the array of arbitrary integers and returns unique numbers array"""
+    """
+    Returns the unique numbers from the given array
+    The returned array is sorted
+    """
     # sort the array
     arr.sort()
 
@@ -23,7 +30,10 @@ def unique_sorted(arr):
 
 
 def unique_unsorted(arr):
-    """get the array of arbitrary integers and returns unique numbers array"""
+    """
+    Returns the unique numbers from the given array
+    The returned array is unsorted
+    """
     # init an empty dict to store unique values
     hash_table = dict()
     result = []
@@ -56,6 +66,14 @@ test_expected = [1, 2, 41, 51]
 assert test_expected == sorted(unique_unsorted(test_numbers))
 
 print "all tests are passed"
+
+
+"""
+Print the total amount of execution time
+unique_sorted:       28.7588908672
+unique_unsorted:     23.3944420815
+python sets:         21.6865098476
+"""
 
 
 def timeit_sorted():
