@@ -1,4 +1,4 @@
-Datai Structures
-================
+Data Structures
+===============
 
 Some data structooure implementations for fun (mostly in python).
