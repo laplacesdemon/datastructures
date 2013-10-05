@@ -1,4 +1,4 @@
-datastructures
-==============
+Datai Structures
+================
 
-Some data structure implementations for fun (mostly in python)
+Some data structooure implementations for fun (mostly in python).
