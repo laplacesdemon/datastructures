@@ -10,6 +10,7 @@ def unique_sorted(arr):
     """
     Returns the unique numbers from the given array
     The returned array is sorted
+    O(n*logn)
     """
     # sort the array
     arr.sort()
@@ -33,6 +34,7 @@ def unique_unsorted(arr):
     """
     Returns the unique numbers from the given array
     The returned array is unsorted
+    O(n)
     """
     # init an empty dict to store unique values
     hash_table = dict()
